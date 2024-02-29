@@ -2,12 +2,11 @@
 
 3.  Shifters
 
->>
+>> If the shifting is dynamic, the number of selectors needed is 16 and the size of signal carried by each selector is 16 bits. 
 
->>
+>> If the shifting is constant, no selectors are needed.
 
->>
-
+>> My barrel shifter has 4 stages that each implement a selector. Each selector carries a signal of size Vector#(16, Word), where Word is Bit#(16). 
 ---
 
-Time spent on Part 1: _____
+Time spent on Part 1: _~40 minutes____

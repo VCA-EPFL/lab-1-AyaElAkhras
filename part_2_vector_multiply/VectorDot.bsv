@@ -1,7 +1,7 @@
 import Vector::*;
 import BRAM::*;
 
-// Time spent on VectorDot: ____
+// Time spent on VectorDot: __~1 hour__
 
 // Please annotate the bugs you find.
 
@@ -23,7 +23,7 @@ module mkVectorDot (VD);
 
     Reg#(Bit#(8)) dim <- mkReg(0);
 
-    Reg#(Bool) ready_start <- mkReg(False);
+    Reg#(Bool) ready_start <- mkReg(False); 
     Reg#(Bit#(8)) pos_a <- mkReg(unpack(0));
     Reg#(Bit#(8)) pos_b <- mkReg(unpack(0));
     Reg#(Bit#(8)) pos_out <- mkReg(unpack(0));
@@ -41,12 +41,14 @@ module mkVectorDot (VD);
                             responseOnWrite: False,
                             address: zeroExtend(pos_a),
                             datain: ?});
-
-        if (pos_a < dim*zeroExtend(i))
+        $display("pos_a in process_a AFTER portA request: %d", pos_a);
+        if (pos_a < dim*zeroExtend(i+1) - 1)  // Bug: Should offset by the dim each time
             pos_a <= pos_a + 1;
-        else done_a <= True;
+        else begin
+            done_a <= True;
+        end
 
-        req_a_ready <= True;
+       req_a_ready <= True;
 
     endrule
 
@@ -56,21 +58,27 @@ module mkVectorDot (VD);
                 address: zeroExtend(pos_b),
                 datain: ?});
 
-        if (pos_b < dim*zeroExtend(i))
+        if (pos_b < dim*zeroExtend(i+1) - 1)  // Bug: Should offset by the dim each time
             pos_b <= pos_b + 1;
-        else done_b <= True;
+        else begin
+            done_b <= True;
+        end
     
         req_b_ready <= True;
     endrule
 
     rule mult_inputs (req_a_ready && req_b_ready && !done_all);
+        $display("Hii from inside the mult_inputs rule");
+
         let out_a <- a.portA.response.get();
         let out_b <- b.portA.response.get();
 
-        output_res <=  out_a*out_b;     
+        output_res <= output_res + (out_a*out_b);  // Bug: was missing the addition
         pos_out <= pos_out + 1;
+
+        $display("pos_out from inside mult_inputs is %d", pos_out);
         
-        if (pos_out == dim-1) begin
+        if (pos_out == dim-1) begin   
             done_all <= True;
         end
 
@@ -82,18 +90,26 @@ module mkVectorDot (VD);
 
 
     method Action start(Bit#(8) dim_in, Bit#(2) i_in) if (!ready_start);
+        $display("Hii from inside the method start");
+    
         ready_start <= True;
         dim <= dim_in;
         done_all <= False;
-        pos_a <= dim_in*zeroExtend(i);
-        pos_b <= dim_in*zeroExtend(i);
+        pos_a <= dim_in*zeroExtend(i_in);  // Bug: Used to multiply by i which is outdated every new test
+        pos_b <= dim_in*zeroExtend(i_in);  // Bug: Used to multiply by i which is outdated every new test
         done_a <= False;
         done_b <= False;
         pos_out <= 0;
         i <= i_in;
+
+        output_res <= 0;  // Bug: reset the output with every new input
+
     endmethod
 
     method ActionValue#(Bit#(32)) response() if (done_all);
+        $display("Hi from inside response");
+        
+        ready_start <= False;  // Bug: Must add this line to ensure that it triggers start again to load a new set of data
         return output_res;
     endmethod
 

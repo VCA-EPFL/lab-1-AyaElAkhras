@@ -1,0 +1,218 @@
+Test passed
+Test passed
+Left barrel shifter test passed
+Warning: file 'v1.hex' for memory 'a_memory' has a gap at addresses 64 to 255.
+Warning: file 'v2.hex' for memory 'b_memory' has a gap at addresses 64 to 255.
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 0
+Hii from inside the method start
+pos_a in process_a AFTER portA request:   0
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   0
+pos_a in process_a AFTER portA request:   1
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   1
+pos_a in process_a AFTER portA request:   2
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   2
+pos_a in process_a AFTER portA request:   3
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   3
+pos_a in process_a AFTER portA request:   4
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   4
+pos_a in process_a AFTER portA request:   5
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   5
+pos_a in process_a AFTER portA request:   6
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   6
+pos_a in process_a AFTER portA request:   7
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   7
+pos_a in process_a AFTER portA request:   8
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   8
+pos_a in process_a AFTER portA request:   9
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   9
+pos_a in process_a AFTER portA request:  10
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  10
+pos_a in process_a AFTER portA request:  11
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  11
+pos_a in process_a AFTER portA request:  12
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  12
+pos_a in process_a AFTER portA request:  13
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  13
+pos_a in process_a AFTER portA request:  14
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  14
+pos_a in process_a AFTER portA request:  15
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  15
+Hi from inside response
+GOT        410
+Test 0 passed
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 1
+Hii from inside the method start
+pos_a in process_a AFTER portA request:  16
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   0
+pos_a in process_a AFTER portA request:  17
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   1
+pos_a in process_a AFTER portA request:  18
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   2
+pos_a in process_a AFTER portA request:  19
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   3
+pos_a in process_a AFTER portA request:  20
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   4
+pos_a in process_a AFTER portA request:  21
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   5
+pos_a in process_a AFTER portA request:  22
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   6
+pos_a in process_a AFTER portA request:  23
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   7
+pos_a in process_a AFTER portA request:  24
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   8
+pos_a in process_a AFTER portA request:  25
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   9
+pos_a in process_a AFTER portA request:  26
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  10
+pos_a in process_a AFTER portA request:  27
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  11
+pos_a in process_a AFTER portA request:  28
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  12
+pos_a in process_a AFTER portA request:  29
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  13
+pos_a in process_a AFTER portA request:  30
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  14
+pos_a in process_a AFTER portA request:  31
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  15
+Hi from inside response
+GOT        354
+Test 1 passed
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 2
+Hii from inside the method start
+pos_a in process_a AFTER portA request:  32
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   0
+pos_a in process_a AFTER portA request:  33
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   1
+pos_a in process_a AFTER portA request:  34
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   2
+pos_a in process_a AFTER portA request:  35
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   3
+pos_a in process_a AFTER portA request:  36
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   4
+pos_a in process_a AFTER portA request:  37
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   5
+pos_a in process_a AFTER portA request:  38
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   6
+pos_a in process_a AFTER portA request:  39
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   7
+pos_a in process_a AFTER portA request:  40
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   8
+pos_a in process_a AFTER portA request:  41
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   9
+pos_a in process_a AFTER portA request:  42
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  10
+pos_a in process_a AFTER portA request:  43
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  11
+pos_a in process_a AFTER portA request:  44
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  12
+pos_a in process_a AFTER portA request:  45
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  13
+pos_a in process_a AFTER portA request:  46
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  14
+pos_a in process_a AFTER portA request:  47
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  15
+Hi from inside response
+GOT        524
+Test 2 passed
+STARTING TEST FOR VECTOR DOT PRODUCT DIM 16... index 3
+Hii from inside the method start
+pos_a in process_a AFTER portA request:  48
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   0
+pos_a in process_a AFTER portA request:  49
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   1
+pos_a in process_a AFTER portA request:  50
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   2
+pos_a in process_a AFTER portA request:  51
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   3
+pos_a in process_a AFTER portA request:  52
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   4
+pos_a in process_a AFTER portA request:  53
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   5
+pos_a in process_a AFTER portA request:  54
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   6
+pos_a in process_a AFTER portA request:  55
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   7
+pos_a in process_a AFTER portA request:  56
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   8
+pos_a in process_a AFTER portA request:  57
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is   9
+pos_a in process_a AFTER portA request:  58
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  10
+pos_a in process_a AFTER portA request:  59
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  11
+pos_a in process_a AFTER portA request:  60
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  12
+pos_a in process_a AFTER portA request:  61
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  13
+pos_a in process_a AFTER portA request:  62
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  14
+pos_a in process_a AFTER portA request:  63
+Hii from inside the mult_inputs rule
+pos_out from inside mult_inputs is  15
+pos_a in process_a AFTER portA request:  64
+Hi from inside response
+GOT        410
+Test 3 passed
